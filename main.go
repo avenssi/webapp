@@ -5,11 +5,11 @@ import (
     "net/http"
 )
 
-func hello(w http.ResponseWriter, r *http.Request) {
-	io.WriteString(w, "<h1>This is the first page on aliyun</h1>")
+func firstPage(w http.ResponseWriter, r *http.Request) {
+	io.WriteString(w, "<h1>Hello, I am avenssi! </h1>")
 }
 
 func main() {
-    http.HandleFunc("/", hello)
-    http.ListenAndServe(":8080", nil)
+	http.HandleFunc("/", firstPage)
+	http.ListenAndServe(":8000", nil)
 }
