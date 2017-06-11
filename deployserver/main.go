@@ -40,9 +40,10 @@ func reLaunch() {
 
 
 func firstPage(w http.ResponseWriter, r *http.Request) {
-	pullCode()
-	reLaunch()
+	//pullCode()
 	io.WriteString(w, "<h1>Hello, I am avenssi! </h1>")
+	reLaunch()
+	//io.WriteString(w, "<h1>Hello, I am avenssi! </h1>")
 }
 
 
