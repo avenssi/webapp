@@ -9,7 +9,7 @@ import (
 
 func pullCode() {
 	// Enter the directory
-	cmd := exec.Command("cd", "/webapp/")
+	cmd := exec.Command("cd", "~/webapp/")
 	err := cmd.Start()
 	if err != nil {
 		log.Fatal(err)
