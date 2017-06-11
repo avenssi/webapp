@@ -13,5 +13,5 @@ func firstPage(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", firstPage)
-	http.ListenAndServe(":8000", nil) //:::8000
+	http.ListenAndServe(":8000", nil) 
 }
